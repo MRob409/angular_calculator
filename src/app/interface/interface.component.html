@@ -1,0 +1,32 @@
+<h3 class = "SecondDis">{{SecondDisplay()}}</h3>
+<h1 class = "MainDis">{{MainDisplay()}}</h1>
+
+<div class="ButtonGrid center">
+
+    <button id = '7' (click)="Numbers($event)" class="button-4" role="button">7</button>
+    <button id = '8' (click)="Numbers($event)" class="button-4" role="button">8</button>
+    <button id = '9' (click)="Numbers($event)" class="button-4" role="button">9</button>
+    <button id = '/' (click)="DM($event)" class="button-4" role="button">/</button>
+    <button (click)="delete()" class="button-4" role="button">Del</button>
+    <button (click)="clear()" class="button-4" role="button">C</button>
+
+    <button id = '4' (click)="Numbers($event)" class="button-4" role="button">4</button>
+    <button id = '5' (click)="Numbers($event)" class="button-4" role="button">5</button>
+    <button id = '6' (click)="Numbers($event)" class="button-4" role="button">6</button>
+    <button id = 'X' (click) ="DM($event)" class="button-4" role="button">X</button>
+    <button (click) ="LeftBracket()" class="button-4" role="button">(</button>
+    <button (click) ="RightBracket()" class="button-4" role="button">)</button>
+
+    <button id = '1' (click)="Numbers($event)" class="button-4" role="button">1</button>
+    <button id = '2' (click)="Numbers($event)" class="button-4" role="button">2</button>
+    <button id = '3' (click)="Numbers($event)" class="button-4" role="button">3</button>
+    <button (click)="subtract()" class="button-4" role="button">-</button>
+    <button (click)="square()" class="button-4" role="button">x²</button>
+    <button (click)="SquareRoute()" class="button-4" role="button">√</button>
+
+    <button id = '0' (click)="Numbers($event)" class="button-4" role="button">0</button>
+    <button (click)="decimal()" class="button-4" role="button">.</button>
+    <button (click)="add()" class="add button-4" role="button">+</button>
+    <button (click)="evaluate()" class="equal button-4" role="button">=</button>
+
+</div>
