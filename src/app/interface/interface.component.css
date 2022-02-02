@@ -1,17 +1,4 @@
-.MainDis {
-  word-wrap: break-word;
-  background-color: #FAFBFC;
-  color: #24292E;
-  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-weight: 500;
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  padding: 16px 16px;
-  margin: auto;
-  width: 500px;
-  border-bottom: none;
-}
-
-.SecondDis {
+.Dis {
   word-wrap: break-word;
   background-color: #FAFBFC;
   color: #24292E;
