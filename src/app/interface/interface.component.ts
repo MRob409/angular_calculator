@@ -45,13 +45,13 @@ export class InterfaceComponent implements OnInit {
       else if (this.equation[i] == ')') {
         NumBracketPairs++
       }
-      else if (this.equation[i] == '(' && this.equation[i+1] == ')') {
+      if (this.equation[i] == '(' && this.equation[i+1] == ')') {
         Error = true;
       }
     }
 
     //if brackets are even and not "()"
-    if (z == NumBracketPairs || !Error) {
+    if (z == NumBracketPairs && !Error) {
 
       if (NumBracketPairs >= 0) {
 
@@ -129,7 +129,7 @@ export class InterfaceComponent implements OnInit {
       }
       console.log('Multiply brackets = ' + MultiplyBracket)
 
-      //Sets previous equation
+      //Sets temp equation
       x = i;
       for (i; i < (z + 1); i++) {
         TempEquation.push(this.equation[i]);
@@ -143,7 +143,7 @@ export class InterfaceComponent implements OnInit {
       //Solves brackets
       this.EvalODMAS(TempEquation);
 
-      console.log(TempEquation)
+      console.log('Temp equation: ' + TempEquation)
 
       if (MultiplyBracket) {
         this.equation.splice(i,(z-i+1),'X',TempEquation.join(""))
